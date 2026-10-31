@@ -11,7 +11,7 @@ if not game:IsLoaded() then game.Loaded:Wait() end
 if game.GameId ~= CONFIG.UniverseId then return end
 -- Allow the destination place UI to finish loading before initialization.
 local entryChallengeRound = math.floor(workspace:GetServerTimeNow() / 900)
-task.wait(15)
+task.wait()
 local Players = game:GetService("Players")
 local RS = game:GetService("ReplicatedStorage")
 local Http = game:GetService("HttpService")
